@@ -1,14 +1,14 @@
 //
-//  Bitcoin_Price_AppUITests.swift
-//  Bitcoin Price AppUITests
+//  Space_Sphere_AppUITests.swift
+//  Space Sphere AppUITests
 //
-//  Created by Rosh Sugathan Thaivalappil on 10/31/19.
+//  Created by Rosh Sugathan Thaivalappil on 11/2/19.
 //  Copyright © 2019 Rosh Sugathan Thaivalappil. All rights reserved.
 //
 
 import XCTest
 
-class Bitcoin_Price_AppUITests: XCTestCase {
+class Space_Sphere_AppUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

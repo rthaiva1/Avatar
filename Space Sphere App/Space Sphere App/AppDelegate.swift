@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Bitcoin Price App
+//  Space Sphere App
 //
-//  Created by Rosh Sugathan Thaivalappil on 10/31/19.
+//  Created by Rosh Sugathan Thaivalappil on 11/2/19.
 //  Copyright © 2019 Rosh Sugathan Thaivalappil. All rights reserved.
 //
 
