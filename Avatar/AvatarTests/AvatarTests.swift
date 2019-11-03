@@ -1,15 +1,15 @@
 //
-//  Space_Sphere_AppTests.swift
-//  Space Sphere AppTests
+//  AvatarTests.swift
+//  AvatarTests
 //
 //  Created by Rosh Sugathan Thaivalappil on 11/2/19.
 //  Copyright © 2019 Rosh Sugathan Thaivalappil. All rights reserved.
 //
 
 import XCTest
-@testable import Space_Sphere_App
+@testable import Avatar
 
-class Space_Sphere_AppTests: XCTestCase {
+class AvatarTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

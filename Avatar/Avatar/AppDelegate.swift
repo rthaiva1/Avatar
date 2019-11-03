@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Space Sphere App
+//  Avatar
 //
 //  Created by Rosh Sugathan Thaivalappil on 11/2/19.
 //  Copyright © 2019 Rosh Sugathan Thaivalappil. All rights reserved.

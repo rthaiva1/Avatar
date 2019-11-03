@@ -1,2 +1,2 @@
-# GetCryptoVal
-IOS application that get BITCOIN price online and display it
+# Avatar
+IOS application that stores powers of a popular game character in blockchain
