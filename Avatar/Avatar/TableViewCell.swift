@@ -11,6 +11,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var avatarLabel:UILabel?
+    @IBOutlet weak var avatarLevel:UILabel?
     @IBOutlet weak var ownerLabel:UILabel?
     @IBOutlet weak var priceLabel:UILabel?
     override func awakeFromNib() {
@@ -24,4 +25,18 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func set(name: String,level: Int,owner: String?, price: Int)
+    {
+        avatarLabel!.text = name
+        avatarLevel!.text = String(level)
+        if(owner == nil)
+        {
+            ownerLabel!.text = "Buy Now"
+        }
+        else{
+            ownerLabel!.text = "Owner: " + owner!
+        }
+
+        priceLabel!.text = String(price)
+    }
 }
