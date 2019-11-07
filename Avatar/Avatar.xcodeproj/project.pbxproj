@@ -16,7 +16,8 @@
 		14192F2E236E76C900D9A330 /* AvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F2D236E76C900D9A330 /* AvatarUITests.swift */; };
 		14192F3E236E7D4D00D9A330 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 14192F3D236E7D4D00D9A330 /* Podfile */; };
 		14192F402371328E00D9A330 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F3F2371328E00D9A330 /* TableViewController.swift */; };
-		14192F42237136D800D9A330 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F41237136D800D9A330 /* TableViewCell.swift */; };
+		14192F482373C37800D9A330 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F462373C37800D9A330 /* TableViewCell.swift */; };
+		14192F492373C37800D9A330 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14192F472373C37800D9A330 /* TableViewCell.xib */; };
 		2EDD4A0E830D494DE652609F /* Pods_Avatar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665AB540AF13871A98B6F941 /* Pods_Avatar.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +54,8 @@
 		14192F2F236E76C900D9A330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14192F3D236E7D4D00D9A330 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		14192F3F2371328E00D9A330 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		14192F41237136D800D9A330 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		14192F462373C37800D9A330 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		14192F472373C37800D9A330 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		48022A8EE281D90D820155ED /* Pods-Avatar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.release.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.release.xcconfig"; sourceTree = "<group>"; };
 		50FCC9F783F69B576DA7FD6B /* Pods-Avatar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.debug.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.debug.xcconfig"; sourceTree = "<group>"; };
 		665AB540AF13871A98B6F941 /* Pods_Avatar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avatar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,10 +113,11 @@
 		14192F0A236E76C700D9A330 /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
+				14192F462373C37800D9A330 /* TableViewCell.swift */,
+				14192F472373C37800D9A330 /* TableViewCell.xib */,
 				14192F0B236E76C700D9A330 /* AppDelegate.swift */,
 				14192F0D236E76C700D9A330 /* SceneDelegate.swift */,
 				14192F11236E76C700D9A330 /* Main.storyboard */,
-				14192F41237136D800D9A330 /* TableViewCell.swift */,
 				14192F3F2371328E00D9A330 /* TableViewController.swift */,
 				14192F14236E76C800D9A330 /* Assets.xcassets */,
 				14192F16236E76C800D9A330 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14192F18236E76C800D9A330 /* LaunchScreen.storyboard in Resources */,
+				14192F492373C37800D9A330 /* TableViewCell.xib in Resources */,
 				14192F15236E76C800D9A330 /* Assets.xcassets in Resources */,
 				14192F3E236E7D4D00D9A330 /* Podfile in Resources */,
 				14192F13236E76C700D9A330 /* Main.storyboard in Resources */,
@@ -335,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14192F0C236E76C700D9A330 /* AppDelegate.swift in Sources */,
-				14192F42237136D800D9A330 /* TableViewCell.swift in Sources */,
+				14192F482373C37800D9A330 /* TableViewCell.swift in Sources */,
 				14192F402371328E00D9A330 /* TableViewController.swift in Sources */,
 				14192F0E236E76C700D9A330 /* SceneDelegate.swift in Sources */,
 			);
