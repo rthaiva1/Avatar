@@ -10,6 +10,25 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    let avatars =
+        [ ["Arcanite Reaper",2,100000],
+          ["Ashkandi, Greatsword of the Brotherhood",5,700000],
+          ["Atiesh, Greatstaff of the Guardian",3,500000],
+          ["Benediction",2,600000],
+          ["Black Bow of the Betrayer",2,800000],
+          ["Blackblade of Shahram",4,800000],
+          ["Corrupted Ashbringer",1,400000],
+          ["Dark Edge of Insanity",3,600000],
+          ["Dragon’s Call",3,700000],
+          ["Dragonwrath, Tarecgosa's Rest",5,1000000],
+          ["Fandral’s Flamescythe",2,50000],
+          ["Fangs of the Father",5,900000],
+          ["Flamewrath",3,500000],
+          ["Frostscythe of Lorde Ahune",1,100000],
+          ["Gurthalak, Voice of the Deeps",2,900000],
+          ["Headmaster’s Charge",6,1800000],
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
