@@ -26,7 +26,7 @@ class TableViewController: UITableViewController {
           ["Flamewrath",3,500000],
           ["Frostscythe of Lorde Ahune",1,100000],
           ["Gurthalak, Voice of the Deeps",2,900000],
-          ["Headmaster’s Charge",6,1800000],
+          ["Headmaster’s Charge",6,1800000]
     ]
     
     override func viewDidLoad() {
@@ -53,12 +53,12 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "avatarcell", for: indexPath)
-        let avatar = avatars[indexPath.row][0] as? String,
-            let level   = avatars[indexPath.row][1] as? Int,
-            let coins   = avatars[indexPath.row][2] as? Int
+        let cell = tableView.dequeueReusableCell(withIdentifier: "avatarcell", for: indexPath) as! TableViewCell
+        let avatar = avatars[indexPath.row][0] as! String
+        let power   = avatars[indexPath.row][1] as! Int
+        let coins   = avatars[indexPath.row][2] as! Int
         // Configure the cell...
-
+        cell.set(name: avatar, level: power, owner: nil, price: coins)
         return cell
     }
     
