@@ -2,7 +2,7 @@
 //  AvatarUITests.swift
 //  AvatarUITests
 //
-//  Created by Rosh Sugathan Thaivalappil on 11/2/19.
+//  Created by Rosh Sugathan Thaivalappil on 11/10/19.
 //  Copyright © 2019 Rosh Sugathan Thaivalappil. All rights reserved.
 //
 

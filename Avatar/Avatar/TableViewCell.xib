@@ -119,6 +119,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="images" width="1920" height="1080"/>
+        <image name="images" width="1280" height="768"/>
     </resources>
 </document>

@@ -3,87 +3,80 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14192F0C236E76C700D9A330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F0B236E76C700D9A330 /* AppDelegate.swift */; };
-		14192F0E236E76C700D9A330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F0D236E76C700D9A330 /* SceneDelegate.swift */; };
-		14192F13236E76C700D9A330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14192F11236E76C700D9A330 /* Main.storyboard */; };
-		14192F15236E76C800D9A330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14192F14236E76C800D9A330 /* Assets.xcassets */; };
-		14192F18236E76C800D9A330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14192F16236E76C800D9A330 /* LaunchScreen.storyboard */; };
-		14192F23236E76C900D9A330 /* AvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F22236E76C900D9A330 /* AvatarTests.swift */; };
-		14192F2E236E76C900D9A330 /* AvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F2D236E76C900D9A330 /* AvatarUITests.swift */; };
-		14192F3E236E7D4D00D9A330 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 14192F3D236E7D4D00D9A330 /* Podfile */; };
-		14192F402371328E00D9A330 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F3F2371328E00D9A330 /* TableViewController.swift */; };
-		14192F482373C37800D9A330 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192F462373C37800D9A330 /* TableViewCell.swift */; };
-		14192F492373C37800D9A330 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14192F472373C37800D9A330 /* TableViewCell.xib */; };
-		143667652377908600D1E2B0 /* block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667642377908600D1E2B0 /* block.swift */; };
-		143667672377956A00D1E2B0 /* blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667662377956A00D1E2B0 /* blockchain.swift */; };
-		1436676D2378181000D1E2B0 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436676C2378181000D1E2B0 /* home.swift */; };
-		2EDD4A0E830D494DE652609F /* Pods_Avatar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665AB540AF13871A98B6F941 /* Pods_Avatar.framework */; };
+		1436677B2378B25D00D1E2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436677A2378B25D00D1E2B0 /* AppDelegate.swift */; };
+		1436677D2378B25D00D1E2B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436677C2378B25D00D1E2B0 /* SceneDelegate.swift */; };
+		143667822378B25D00D1E2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143667802378B25D00D1E2B0 /* Main.storyboard */; };
+		143667842378B25F00D1E2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143667832378B25F00D1E2B0 /* Assets.xcassets */; };
+		143667872378B25F00D1E2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143667852378B25F00D1E2B0 /* LaunchScreen.storyboard */; };
+		143667922378B25F00D1E2B0 /* AvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667912378B25F00D1E2B0 /* AvatarTests.swift */; };
+		1436679D2378B25F00D1E2B0 /* AvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436679C2378B25F00D1E2B0 /* AvatarUITests.swift */; };
+		143667B02378B32D00D1E2B0 /* blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667AA2378B32D00D1E2B0 /* blockchain.swift */; };
+		143667B12378B32D00D1E2B0 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667AB2378B32D00D1E2B0 /* home.swift */; };
+		143667B22378B32D00D1E2B0 /* block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667AC2378B32D00D1E2B0 /* block.swift */; };
+		143667B32378B32D00D1E2B0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667AD2378B32D00D1E2B0 /* TableViewCell.swift */; };
+		143667B42378B32D00D1E2B0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667AE2378B32D00D1E2B0 /* TableViewController.swift */; };
+		143667B52378B32D00D1E2B0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143667AF2378B32D00D1E2B0 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14192F1F236E76C900D9A330 /* PBXContainerItemProxy */ = {
+		1436678E2378B25F00D1E2B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14192F00236E76C700D9A330 /* Project object */;
+			containerPortal = 1436676F2378B25D00D1E2B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14192F07236E76C700D9A330;
+			remoteGlobalIDString = 143667762378B25D00D1E2B0;
 			remoteInfo = Avatar;
 		};
-		14192F2A236E76C900D9A330 /* PBXContainerItemProxy */ = {
+		143667992378B25F00D1E2B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14192F00236E76C700D9A330 /* Project object */;
+			containerPortal = 1436676F2378B25D00D1E2B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 14192F07236E76C700D9A330;
+			remoteGlobalIDString = 143667762378B25D00D1E2B0;
 			remoteInfo = Avatar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14192F08236E76C700D9A330 /* Avatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14192F0B236E76C700D9A330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14192F0D236E76C700D9A330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14192F12236E76C700D9A330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14192F14236E76C800D9A330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14192F17236E76C800D9A330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14192F19236E76C800D9A330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14192F1E236E76C900D9A330 /* AvatarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14192F22236E76C900D9A330 /* AvatarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTests.swift; sourceTree = "<group>"; };
-		14192F24236E76C900D9A330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14192F29236E76C900D9A330 /* AvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14192F2D236E76C900D9A330 /* AvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarUITests.swift; sourceTree = "<group>"; };
-		14192F2F236E76C900D9A330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14192F3D236E7D4D00D9A330 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		14192F3F2371328E00D9A330 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		14192F462373C37800D9A330 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		14192F472373C37800D9A330 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		143667642377908600D1E2B0 /* block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = block.swift; sourceTree = "<group>"; };
-		143667662377956A00D1E2B0 /* blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blockchain.swift; sourceTree = "<group>"; };
-		1436676C2378181000D1E2B0 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
-		48022A8EE281D90D820155ED /* Pods-Avatar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.release.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.release.xcconfig"; sourceTree = "<group>"; };
-		50FCC9F783F69B576DA7FD6B /* Pods-Avatar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.debug.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.debug.xcconfig"; sourceTree = "<group>"; };
-		665AB540AF13871A98B6F941 /* Pods_Avatar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avatar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143667772378B25D00D1E2B0 /* Avatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1436677A2378B25D00D1E2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1436677C2378B25D00D1E2B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		143667812378B25D00D1E2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		143667832378B25F00D1E2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143667862378B25F00D1E2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		143667882378B25F00D1E2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1436678D2378B25F00D1E2B0 /* AvatarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143667912378B25F00D1E2B0 /* AvatarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTests.swift; sourceTree = "<group>"; };
+		143667932378B25F00D1E2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143667982378B25F00D1E2B0 /* AvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1436679C2378B25F00D1E2B0 /* AvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarUITests.swift; sourceTree = "<group>"; };
+		1436679E2378B25F00D1E2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143667AA2378B32D00D1E2B0 /* blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blockchain.swift; sourceTree = "<group>"; };
+		143667AB2378B32D00D1E2B0 /* home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		143667AC2378B32D00D1E2B0 /* block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = block.swift; sourceTree = "<group>"; };
+		143667AD2378B32D00D1E2B0 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		143667AE2378B32D00D1E2B0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		143667AF2378B32D00D1E2B0 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14192F05236E76C700D9A330 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EDD4A0E830D494DE652609F /* Pods_Avatar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14192F1B236E76C900D9A330 /* Frameworks */ = {
+		143667742378B25D00D1E2B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14192F26236E76C900D9A330 /* Frameworks */ = {
+		1436678A2378B25F00D1E2B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143667952378B25F00D1E2B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,95 +86,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14192EFF236E76C700D9A330 = {
+		1436676E2378B25D00D1E2B0 = {
 			isa = PBXGroup;
 			children = (
-				14192F3D236E7D4D00D9A330 /* Podfile */,
-				14192F0A236E76C700D9A330 /* Avatar */,
-				14192F21236E76C900D9A330 /* AvatarTests */,
-				14192F2C236E76C900D9A330 /* AvatarUITests */,
-				14192F09236E76C700D9A330 /* Products */,
-				E79C8AB86C5B0C5EDAC241D8 /* Pods */,
-				DFCF28D0CD8DFE516BEEDB18 /* Frameworks */,
+				143667792378B25D00D1E2B0 /* Avatar */,
+				143667902378B25F00D1E2B0 /* AvatarTests */,
+				1436679B2378B25F00D1E2B0 /* AvatarUITests */,
+				143667782378B25D00D1E2B0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		14192F09236E76C700D9A330 /* Products */ = {
+		143667782378B25D00D1E2B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14192F08236E76C700D9A330 /* Avatar.app */,
-				14192F1E236E76C900D9A330 /* AvatarTests.xctest */,
-				14192F29236E76C900D9A330 /* AvatarUITests.xctest */,
+				143667772378B25D00D1E2B0 /* Avatar.app */,
+				1436678D2378B25F00D1E2B0 /* AvatarTests.xctest */,
+				143667982378B25F00D1E2B0 /* AvatarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14192F0A236E76C700D9A330 /* Avatar */ = {
+		143667792378B25D00D1E2B0 /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
-				14192F462373C37800D9A330 /* TableViewCell.swift */,
-				14192F472373C37800D9A330 /* TableViewCell.xib */,
-				14192F0B236E76C700D9A330 /* AppDelegate.swift */,
-				14192F0D236E76C700D9A330 /* SceneDelegate.swift */,
-				14192F11236E76C700D9A330 /* Main.storyboard */,
-				1436676C2378181000D1E2B0 /* home.swift */,
-				14192F3F2371328E00D9A330 /* TableViewController.swift */,
-				14192F14236E76C800D9A330 /* Assets.xcassets */,
-				14192F16236E76C800D9A330 /* LaunchScreen.storyboard */,
-				14192F19236E76C800D9A330 /* Info.plist */,
-				143667642377908600D1E2B0 /* block.swift */,
-				143667662377956A00D1E2B0 /* blockchain.swift */,
+				143667AC2378B32D00D1E2B0 /* block.swift */,
+				143667AA2378B32D00D1E2B0 /* blockchain.swift */,
+				143667AB2378B32D00D1E2B0 /* home.swift */,
+				143667AD2378B32D00D1E2B0 /* TableViewCell.swift */,
+				143667AF2378B32D00D1E2B0 /* TableViewCell.xib */,
+				143667AE2378B32D00D1E2B0 /* TableViewController.swift */,
+				1436677A2378B25D00D1E2B0 /* AppDelegate.swift */,
+				1436677C2378B25D00D1E2B0 /* SceneDelegate.swift */,
+				143667802378B25D00D1E2B0 /* Main.storyboard */,
+				143667832378B25F00D1E2B0 /* Assets.xcassets */,
+				143667852378B25F00D1E2B0 /* LaunchScreen.storyboard */,
+				143667882378B25F00D1E2B0 /* Info.plist */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
 		};
-		14192F21236E76C900D9A330 /* AvatarTests */ = {
+		143667902378B25F00D1E2B0 /* AvatarTests */ = {
 			isa = PBXGroup;
 			children = (
-				14192F22236E76C900D9A330 /* AvatarTests.swift */,
-				14192F24236E76C900D9A330 /* Info.plist */,
+				143667912378B25F00D1E2B0 /* AvatarTests.swift */,
+				143667932378B25F00D1E2B0 /* Info.plist */,
 			);
 			path = AvatarTests;
 			sourceTree = "<group>";
 		};
-		14192F2C236E76C900D9A330 /* AvatarUITests */ = {
+		1436679B2378B25F00D1E2B0 /* AvatarUITests */ = {
 			isa = PBXGroup;
 			children = (
-				14192F2D236E76C900D9A330 /* AvatarUITests.swift */,
-				14192F2F236E76C900D9A330 /* Info.plist */,
+				1436679C2378B25F00D1E2B0 /* AvatarUITests.swift */,
+				1436679E2378B25F00D1E2B0 /* Info.plist */,
 			);
 			path = AvatarUITests;
-			sourceTree = "<group>";
-		};
-		DFCF28D0CD8DFE516BEEDB18 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				665AB540AF13871A98B6F941 /* Pods_Avatar.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E79C8AB86C5B0C5EDAC241D8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				50FCC9F783F69B576DA7FD6B /* Pods-Avatar.debug.xcconfig */,
-				48022A8EE281D90D820155ED /* Pods-Avatar.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14192F07236E76C700D9A330 /* Avatar */ = {
+		143667762378B25D00D1E2B0 /* Avatar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14192F32236E76C900D9A330 /* Build configuration list for PBXNativeTarget "Avatar" */;
+			buildConfigurationList = 143667A12378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "Avatar" */;
 			buildPhases = (
-				E1605BB73AA4B3118775B797 /* [CP] Check Pods Manifest.lock */,
-				14192F04236E76C700D9A330 /* Sources */,
-				14192F05236E76C700D9A330 /* Frameworks */,
-				14192F06236E76C700D9A330 /* Resources */,
-				CF49F9794C6056F537E80EEC /* [CP] Embed Pods Frameworks */,
+				143667732378B25D00D1E2B0 /* Sources */,
+				143667742378B25D00D1E2B0 /* Frameworks */,
+				143667752378B25D00D1E2B0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -189,69 +160,69 @@
 			);
 			name = Avatar;
 			productName = Avatar;
-			productReference = 14192F08236E76C700D9A330 /* Avatar.app */;
+			productReference = 143667772378B25D00D1E2B0 /* Avatar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		14192F1D236E76C900D9A330 /* AvatarTests */ = {
+		1436678C2378B25F00D1E2B0 /* AvatarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14192F35236E76C900D9A330 /* Build configuration list for PBXNativeTarget "AvatarTests" */;
+			buildConfigurationList = 143667A42378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "AvatarTests" */;
 			buildPhases = (
-				14192F1A236E76C900D9A330 /* Sources */,
-				14192F1B236E76C900D9A330 /* Frameworks */,
-				14192F1C236E76C900D9A330 /* Resources */,
+				143667892378B25F00D1E2B0 /* Sources */,
+				1436678A2378B25F00D1E2B0 /* Frameworks */,
+				1436678B2378B25F00D1E2B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14192F20236E76C900D9A330 /* PBXTargetDependency */,
+				1436678F2378B25F00D1E2B0 /* PBXTargetDependency */,
 			);
 			name = AvatarTests;
 			productName = AvatarTests;
-			productReference = 14192F1E236E76C900D9A330 /* AvatarTests.xctest */;
+			productReference = 1436678D2378B25F00D1E2B0 /* AvatarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		14192F28236E76C900D9A330 /* AvatarUITests */ = {
+		143667972378B25F00D1E2B0 /* AvatarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14192F38236E76C900D9A330 /* Build configuration list for PBXNativeTarget "AvatarUITests" */;
+			buildConfigurationList = 143667A72378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "AvatarUITests" */;
 			buildPhases = (
-				14192F25236E76C900D9A330 /* Sources */,
-				14192F26236E76C900D9A330 /* Frameworks */,
-				14192F27236E76C900D9A330 /* Resources */,
+				143667942378B25F00D1E2B0 /* Sources */,
+				143667952378B25F00D1E2B0 /* Frameworks */,
+				143667962378B25F00D1E2B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14192F2B236E76C900D9A330 /* PBXTargetDependency */,
+				1436679A2378B25F00D1E2B0 /* PBXTargetDependency */,
 			);
 			name = AvatarUITests;
 			productName = AvatarUITests;
-			productReference = 14192F29236E76C900D9A330 /* AvatarUITests.xctest */;
+			productReference = 143667982378B25F00D1E2B0 /* AvatarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		14192F00236E76C700D9A330 /* Project object */ = {
+		1436676F2378B25D00D1E2B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Rosh Sugathan Thaivalappil";
 				TargetAttributes = {
-					14192F07236E76C700D9A330 = {
-						CreatedOnToolsVersion = 11.1;
+					143667762378B25D00D1E2B0 = {
+						CreatedOnToolsVersion = 11.2;
 					};
-					14192F1D236E76C900D9A330 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 14192F07236E76C700D9A330;
+					1436678C2378B25F00D1E2B0 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 143667762378B25D00D1E2B0;
 					};
-					14192F28236E76C900D9A330 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 14192F07236E76C700D9A330;
+					143667972378B25F00D1E2B0 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 143667762378B25D00D1E2B0;
 					};
 				};
 			};
-			buildConfigurationList = 14192F03236E76C700D9A330 /* Build configuration list for PBXProject "Avatar" */;
+			buildConfigurationList = 143667722378B25D00D1E2B0 /* Build configuration list for PBXProject "Avatar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,39 +230,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 14192EFF236E76C700D9A330;
-			productRefGroup = 14192F09236E76C700D9A330 /* Products */;
+			mainGroup = 1436676E2378B25D00D1E2B0;
+			productRefGroup = 143667782378B25D00D1E2B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14192F07236E76C700D9A330 /* Avatar */,
-				14192F1D236E76C900D9A330 /* AvatarTests */,
-				14192F28236E76C900D9A330 /* AvatarUITests */,
+				143667762378B25D00D1E2B0 /* Avatar */,
+				1436678C2378B25F00D1E2B0 /* AvatarTests */,
+				143667972378B25F00D1E2B0 /* AvatarUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14192F06236E76C700D9A330 /* Resources */ = {
+		143667752378B25D00D1E2B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14192F18236E76C800D9A330 /* LaunchScreen.storyboard in Resources */,
-				14192F492373C37800D9A330 /* TableViewCell.xib in Resources */,
-				14192F15236E76C800D9A330 /* Assets.xcassets in Resources */,
-				14192F3E236E7D4D00D9A330 /* Podfile in Resources */,
-				14192F13236E76C700D9A330 /* Main.storyboard in Resources */,
+				143667872378B25F00D1E2B0 /* LaunchScreen.storyboard in Resources */,
+				143667B52378B32D00D1E2B0 /* TableViewCell.xib in Resources */,
+				143667842378B25F00D1E2B0 /* Assets.xcassets in Resources */,
+				143667822378B25D00D1E2B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14192F1C236E76C900D9A330 /* Resources */ = {
+		1436678B2378B25F00D1E2B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14192F27236E76C900D9A330 /* Resources */ = {
+		143667962378B25F00D1E2B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,107 +270,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		CF49F9794C6056F537E80EEC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Avatar/Pods-Avatar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Avatar/Pods-Avatar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Avatar/Pods-Avatar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1605BB73AA4B3118775B797 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Avatar-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		14192F04236E76C700D9A330 /* Sources */ = {
+		143667732378B25D00D1E2B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14192F0C236E76C700D9A330 /* AppDelegate.swift in Sources */,
-				143667652377908600D1E2B0 /* block.swift in Sources */,
-				1436676D2378181000D1E2B0 /* home.swift in Sources */,
-				14192F482373C37800D9A330 /* TableViewCell.swift in Sources */,
-				143667672377956A00D1E2B0 /* blockchain.swift in Sources */,
-				14192F402371328E00D9A330 /* TableViewController.swift in Sources */,
-				14192F0E236E76C700D9A330 /* SceneDelegate.swift in Sources */,
+				143667B02378B32D00D1E2B0 /* blockchain.swift in Sources */,
+				1436677B2378B25D00D1E2B0 /* AppDelegate.swift in Sources */,
+				143667B42378B32D00D1E2B0 /* TableViewController.swift in Sources */,
+				143667B22378B32D00D1E2B0 /* block.swift in Sources */,
+				143667B12378B32D00D1E2B0 /* home.swift in Sources */,
+				143667B32378B32D00D1E2B0 /* TableViewCell.swift in Sources */,
+				1436677D2378B25D00D1E2B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14192F1A236E76C900D9A330 /* Sources */ = {
+		143667892378B25F00D1E2B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14192F23236E76C900D9A330 /* AvatarTests.swift in Sources */,
+				143667922378B25F00D1E2B0 /* AvatarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14192F25236E76C900D9A330 /* Sources */ = {
+		143667942378B25F00D1E2B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14192F2E236E76C900D9A330 /* AvatarUITests.swift in Sources */,
+				1436679D2378B25F00D1E2B0 /* AvatarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14192F20236E76C900D9A330 /* PBXTargetDependency */ = {
+		1436678F2378B25F00D1E2B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14192F07236E76C700D9A330 /* Avatar */;
-			targetProxy = 14192F1F236E76C900D9A330 /* PBXContainerItemProxy */;
+			target = 143667762378B25D00D1E2B0 /* Avatar */;
+			targetProxy = 1436678E2378B25F00D1E2B0 /* PBXContainerItemProxy */;
 		};
-		14192F2B236E76C900D9A330 /* PBXTargetDependency */ = {
+		1436679A2378B25F00D1E2B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14192F07236E76C700D9A330 /* Avatar */;
-			targetProxy = 14192F2A236E76C900D9A330 /* PBXContainerItemProxy */;
+			target = 143667762378B25D00D1E2B0 /* Avatar */;
+			targetProxy = 143667992378B25F00D1E2B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14192F11236E76C700D9A330 /* Main.storyboard */ = {
+		143667802378B25D00D1E2B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14192F12236E76C700D9A330 /* Base */,
+				143667812378B25D00D1E2B0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		14192F16236E76C800D9A330 /* LaunchScreen.storyboard */ = {
+		143667852378B25F00D1E2B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14192F17236E76C800D9A330 /* Base */,
+				143667862378B25F00D1E2B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -408,7 +336,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		14192F30236E76C900D9A330 /* Debug */ = {
+		1436679F2378B25F00D1E2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -458,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -468,7 +396,7 @@
 			};
 			name = Debug;
 		};
-		14192F31236E76C900D9A330 /* Release */ = {
+		143667A02378B25F00D1E2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -512,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -522,9 +450,8 @@
 			};
 			name = Release;
 		};
-		14192F33236E76C900D9A330 /* Debug */ = {
+		143667A22378B25F00D1E2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50FCC9F783F69B576DA7FD6B /* Pods-Avatar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,9 +468,8 @@
 			};
 			name = Debug;
 		};
-		14192F34236E76C900D9A330 /* Release */ = {
+		143667A32378B25F00D1E2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48022A8EE281D90D820155ED /* Pods-Avatar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,7 +486,7 @@
 			};
 			name = Release;
 		};
-		14192F36236E76C900D9A330 /* Debug */ = {
+		143667A52378B25F00D1E2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -568,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRXK5C52QN;
 				INFOPLIST_FILE = AvatarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +508,7 @@
 			};
 			name = Debug;
 		};
-		14192F37236E76C900D9A330 /* Release */ = {
+		143667A62378B25F00D1E2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -590,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRXK5C52QN;
 				INFOPLIST_FILE = AvatarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +530,7 @@
 			};
 			name = Release;
 		};
-		14192F39236E76C900D9A330 /* Debug */ = {
+		143667A82378B25F00D1E2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -624,7 +550,7 @@
 			};
 			name = Debug;
 		};
-		14192F3A236E76C900D9A330 /* Release */ = {
+		143667A92378B25F00D1E2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -647,43 +573,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14192F03236E76C700D9A330 /* Build configuration list for PBXProject "Avatar" */ = {
+		143667722378B25D00D1E2B0 /* Build configuration list for PBXProject "Avatar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14192F30236E76C900D9A330 /* Debug */,
-				14192F31236E76C900D9A330 /* Release */,
+				1436679F2378B25F00D1E2B0 /* Debug */,
+				143667A02378B25F00D1E2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14192F32236E76C900D9A330 /* Build configuration list for PBXNativeTarget "Avatar" */ = {
+		143667A12378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "Avatar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14192F33236E76C900D9A330 /* Debug */,
-				14192F34236E76C900D9A330 /* Release */,
+				143667A22378B25F00D1E2B0 /* Debug */,
+				143667A32378B25F00D1E2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14192F35236E76C900D9A330 /* Build configuration list for PBXNativeTarget "AvatarTests" */ = {
+		143667A42378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "AvatarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14192F36236E76C900D9A330 /* Debug */,
-				14192F37236E76C900D9A330 /* Release */,
+				143667A52378B25F00D1E2B0 /* Debug */,
+				143667A62378B25F00D1E2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14192F38236E76C900D9A330 /* Build configuration list for PBXNativeTarget "AvatarUITests" */ = {
+		143667A72378B25F00D1E2B0 /* Build configuration list for PBXNativeTarget "AvatarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14192F39236E76C900D9A330 /* Debug */,
-				14192F3A236E76C900D9A330 /* Release */,
+				143667A82378B25F00D1E2B0 /* Debug */,
+				143667A92378B25F00D1E2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 14192F00236E76C700D9A330 /* Project object */;
+	rootObject = 1436676F2378B25D00D1E2B0 /* Project object */;
 }
