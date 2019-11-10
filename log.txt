@@ -1,0 +1,338 @@
+commit 1a0ff8cc7d879306b1d20b677604e059fe17e5c0
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Sun Nov 10 16:10:54 2019 -0500
+
+    Removed almofire
+
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ Avatar/Avatar.xcodeproj/project.pbxproj            | 396 ++++-----
+ Avatar/Avatar.xcworkspace/contents.xcworkspacedata |  10 -
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 -
+ Avatar/Avatar/.DS_Store                            | Bin 6148 -> 8196 bytes
+ Avatar/Avatar/AppDelegate.swift                    |   2 +-
+ Avatar/Avatar/Assets.xcassets/8.imageset/8.jpg     | Bin 6312 -> 2033 bytes
+ Avatar/Avatar/Base.lproj/Main.storyboard           |   2 +-
+ Avatar/Avatar/SceneDelegate.swift                  |   2 +-
+ Avatar/Avatar/TableViewCell.xib                    |   2 +-
+ Avatar/AvatarTests/AvatarTests.swift               |   2 +-
+ Avatar/AvatarUITests/AvatarUITests.swift           |   2 +-
+ Avatar/Podfile                                     |   7 -
+ Avatar/Podfile.lock                                |  16 -
+ Avatar/Pods/Alamofire/LICENSE                      |  19 -
+ Avatar/Pods/Alamofire/README.md                    | 234 ------
+ Avatar/Pods/Alamofire/Source/AFError.swift         | 460 -----------
+ Avatar/Pods/Alamofire/Source/Alamofire.swift       | 465 -----------
+ .../Alamofire/Source/DispatchQueue+Alamofire.swift |  37 -
+ .../Pods/Alamofire/Source/MultipartFormData.swift  | 580 -------------
+ .../Source/NetworkReachabilityManager.swift        | 238 ------
+ Avatar/Pods/Alamofire/Source/Notifications.swift   |  55 --
+ .../Pods/Alamofire/Source/ParameterEncoding.swift  | 483 -----------
+ Avatar/Pods/Alamofire/Source/Request.swift         | 660 ---------------
+ Avatar/Pods/Alamofire/Source/Response.swift        | 574 -------------
+ .../Alamofire/Source/ResponseSerialization.swift   | 715 ----------------
+ Avatar/Pods/Alamofire/Source/Result.swift          | 300 -------
+ .../Pods/Alamofire/Source/ServerTrustPolicy.swift  | 310 -------
+ Avatar/Pods/Alamofire/Source/SessionDelegate.swift | 725 -----------------
+ Avatar/Pods/Alamofire/Source/SessionManager.swift  | 899 ---------------------
+ Avatar/Pods/Alamofire/Source/TaskDelegate.swift    | 466 -----------
+ Avatar/Pods/Alamofire/Source/Timeline.swift        | 136 ----
+ Avatar/Pods/Alamofire/Source/Validation.swift      | 321 --------
+ Avatar/Pods/Manifest.lock                          |  16 -
+ Avatar/Pods/Pods.xcodeproj/project.pbxproj         | 668 ---------------
+ .../Alamofire/Alamofire-Info.plist                 |  26 -
+ .../Alamofire/Alamofire-dummy.m                    |   5 -
+ .../Alamofire/Alamofire-prefix.pch                 |  12 -
+ .../Alamofire/Alamofire-umbrella.h                 |  16 -
+ .../Alamofire/Alamofire.modulemap                  |   6 -
+ .../Alamofire/Alamofire.xcconfig                   |  10 -
+ .../Pods-Avatar/Pods-Avatar-Info.plist             |  26 -
+ .../Pods-Avatar-acknowledgements.markdown          |  26 -
+ .../Pods-Avatar/Pods-Avatar-acknowledgements.plist |  58 --
+ .../Pods-Avatar/Pods-Avatar-dummy.m                |   5 -
+ ...-Avatar-frameworks-Debug-input-files.xcfilelist |   2 -
+ ...Avatar-frameworks-Debug-output-files.xcfilelist |   1 -
+ ...vatar-frameworks-Release-input-files.xcfilelist |   2 -
+ ...atar-frameworks-Release-output-files.xcfilelist |   1 -
+ .../Pods-Avatar/Pods-Avatar-frameworks.sh          | 171 ----
+ .../Pods-Avatar/Pods-Avatar-umbrella.h             |  16 -
+ .../Pods-Avatar/Pods-Avatar.debug.xcconfig         |  12 -
+ .../Pods-Avatar/Pods-Avatar.modulemap              |   6 -
+ .../Pods-Avatar/Pods-Avatar.release.xcconfig       |  12 -
+ 54 files changed, 167 insertions(+), 9056 deletions(-)
+
+commit cf658c397f35ee60d2a63b44da31001278391a92
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Sun Nov 10 15:41:41 2019 -0500
+
+    Code complete
+
+ Avatar/Avatar/Assets.xcassets/1.imageset/1.png     | Bin 0 -> 8859 bytes
+ .../Assets.xcassets/1.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/10.imageset/10.jpg   | Bin 0 -> 10310 bytes
+ .../Assets.xcassets/10.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/11.imageset/11.jpg   | Bin 0 -> 5515 bytes
+ .../Assets.xcassets/11.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/12.imageset/12.png   | Bin 0 -> 17103 bytes
+ .../Assets.xcassets/12.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/13.imageset/13.jpg   | Bin 0 -> 4881 bytes
+ .../Assets.xcassets/13.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/14.imageset/14.jpg   | Bin 0 -> 6915 bytes
+ .../Assets.xcassets/14.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/15.imageset/15.jpg   | Bin 0 -> 2849 bytes
+ .../Assets.xcassets/15.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/16.imageset/16.png   | Bin 0 -> 2957 bytes
+ .../Assets.xcassets/16.imageset/Contents.json      |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/2.imageset/2.png     | Bin 0 -> 8490 bytes
+ .../Assets.xcassets/2.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/3.imageset/3.jpg     | Bin 0 -> 3965 bytes
+ .../Assets.xcassets/3.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/4.imageset/4.png     | Bin 0 -> 8901 bytes
+ .../Assets.xcassets/4.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/5.imageset/5.png     | Bin 0 -> 15109 bytes
+ .../Assets.xcassets/5.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/6.imageset/6.png     | Bin 0 -> 5417 bytes
+ .../Assets.xcassets/6.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/7.imageset/7.jpg     | Bin 0 -> 5070 bytes
+ .../Assets.xcassets/7.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/8.imageset/8.jpg     | Bin 0 -> 6312 bytes
+ .../Assets.xcassets/8.imageset/Contents.json       |  21 +++++++
+ Avatar/Avatar/Assets.xcassets/9.imageset/9.png     | Bin 0 -> 8448 bytes
+ .../Assets.xcassets/9.imageset/Contents.json       |  21 +++++++
+ .../background.imageset/Contents.json              |  21 +++++++
+ .../background.imageset/background.jpg             | Bin 0 -> 155109 bytes
+ .../Assets.xcassets/images.imageset/Contents.json  |  21 +++++++
+ .../Assets.xcassets/images.imageset/images.jpg     | Bin 0 -> 53479 bytes
+ Avatar/Avatar/Base.lproj/Main.storyboard           |  68 +++++++++++----------
+ Avatar/Avatar/TableViewCell.swift                  |   3 +-
+ Avatar/Avatar/TableViewCell.xib                    |  22 ++++---
+ Avatar/Avatar/TableViewController.swift            |  58 ++++++++++--------
+ Avatar/Avatar/home.swift                           |   9 ++-
+ 41 files changed, 468 insertions(+), 70 deletions(-)
+
+commit fd1d3d68ba1de1f013c095a1f57d89612f231ecc
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Sun Nov 10 12:23:32 2019 -0500
+
+    Blockchain implemented
+
+ Avatar/Avatar.xcodeproj/project.pbxproj  |  4 +++
+ Avatar/Avatar/Base.lproj/Main.storyboard | 58 ++++++++++++++++++++++++++-----
+ Avatar/Avatar/TableViewCell.swift        | 11 +++---
+ Avatar/Avatar/TableViewCell.xib          |  2 +-
+ Avatar/Avatar/TableViewController.swift  | 59 +++++++++++++++++++++++++++++---
+ Avatar/Avatar/home.swift                 | 19 ++++++++++
+ 6 files changed, 134 insertions(+), 19 deletions(-)
+
+commit 8bb694f80a98492f8abd12e973981c4b4245f580
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Sat Nov 9 23:27:15 2019 -0500
+
+    Defined blockchain
+
+ Avatar/Avatar.xcodeproj/project.pbxproj |   8 +++
+ Avatar/Avatar/TableViewCell.swift       |  42 ++++++------
+ Avatar/Avatar/TableViewCell.xib         | 113 +++++++++++++++++++++-----------
+ Avatar/Avatar/TableViewController.swift |  12 ++--
+ Avatar/Avatar/block.swift               |  22 +++++++
+ Avatar/Avatar/blockchain.swift          |  32 +++++++++
+ 6 files changed, 165 insertions(+), 64 deletions(-)
+
+commit 8dd7a491c8b277cbdedbd6751d68f8405d04a63e
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Fri Nov 8 21:54:01 2019 -0500
+
+    Fixed issues and successful data display
+
+ Avatar/Avatar/TableViewController.swift | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit a48ea5b758884768087bae5e960264977d64b15d
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Thu Nov 7 23:31:49 2019 -0500
+
+    Setting up valures in cell
+
+ Avatar/Avatar/TableViewCell.xib         |  2 +-
+ Avatar/Avatar/TableViewController.swift | 16 +++++++++-------
+ 2 files changed, 10 insertions(+), 8 deletions(-)
+
+commit d11942cf862b0c3d21c07965abb3c26a5aff60b5
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Thu Nov 7 22:21:06 2019 -0500
+
+    Adding data
+
+ Avatar/Avatar/TableViewController.swift | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+commit 736009f48ba7c363559d1a7ded515e943e18d6b1
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MBP.lan1>
+Date:   Wed Nov 6 22:51:00 2019 -0500
+
+    Table view cell customized for requirement
+
+ Avatar/Avatar.xcodeproj/project.pbxproj  |  12 +++--
+ Avatar/Avatar/.DS_Store                  | Bin 6148 -> 6148 bytes
+ Avatar/Avatar/Base.lproj/Main.storyboard |  63 ++----------------------
+ Avatar/Avatar/TableViewCell.swift        |  30 +++++++++---
+ Avatar/Avatar/TableViewCell.xib          |  81 +++++++++++++++++++++++++++++++
+ 5 files changed, 115 insertions(+), 71 deletions(-)
+
+commit 8e15ecb7efe159e782fd2b634b50230c38b5db7c
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MBP.lan1>
+Date:   Wed Nov 6 21:46:37 2019 -0500
+
+    Working on story board
+
+ Avatar/Avatar/Base.lproj/Main.storyboard | 63 ++++++++++++++++++++++++++++++--
+ 1 file changed, 60 insertions(+), 3 deletions(-)
+
+commit 47fd834d67ededd5b476950ce8dd75eee66fbf36
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Tue Nov 5 23:34:39 2019 -0500
+
+    Adding table view cell code
+
+ Avatar/Avatar/TableViewCell.swift | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+commit e5e5e881cfbe31d7d38142153d9c2b4a0c248e8f
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Mon Nov 4 23:51:40 2019 -0500
+
+    Working on Layout
+
+ Avatar/.DS_Store                                   | Bin 6148 -> 6148 bytes
+ Avatar/Avatar.xcodeproj/project.pbxproj            |  84 +-
+ Avatar/Avatar.xcworkspace/contents.xcworkspacedata |  10 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ Avatar/Avatar/Base.lproj/Main.storyboard           |  59 +-
+ Avatar/Avatar/TableViewCell.swift                  |  27 +
+ Avatar/Avatar/TableViewController.swift            |  90 +++
+ Avatar/Avatar/ViewController.swift                 |  20 -
+ Avatar/Podfile.lock                                |  16 +
+ Avatar/Pods/Alamofire/LICENSE                      |  19 +
+ Avatar/Pods/Alamofire/README.md                    | 234 ++++++
+ Avatar/Pods/Alamofire/Source/AFError.swift         | 460 +++++++++++
+ Avatar/Pods/Alamofire/Source/Alamofire.swift       | 465 +++++++++++
+ .../Alamofire/Source/DispatchQueue+Alamofire.swift |  37 +
+ .../Pods/Alamofire/Source/MultipartFormData.swift  | 580 +++++++++++++
+ .../Source/NetworkReachabilityManager.swift        | 238 ++++++
+ Avatar/Pods/Alamofire/Source/Notifications.swift   |  55 ++
+ .../Pods/Alamofire/Source/ParameterEncoding.swift  | 483 +++++++++++
+ Avatar/Pods/Alamofire/Source/Request.swift         | 660 +++++++++++++++
+ Avatar/Pods/Alamofire/Source/Response.swift        | 574 +++++++++++++
+ .../Alamofire/Source/ResponseSerialization.swift   | 715 ++++++++++++++++
+ Avatar/Pods/Alamofire/Source/Result.swift          | 300 +++++++
+ .../Pods/Alamofire/Source/ServerTrustPolicy.swift  | 310 +++++++
+ Avatar/Pods/Alamofire/Source/SessionDelegate.swift | 725 +++++++++++++++++
+ Avatar/Pods/Alamofire/Source/SessionManager.swift  | 899 +++++++++++++++++++++
+ Avatar/Pods/Alamofire/Source/TaskDelegate.swift    | 466 +++++++++++
+ Avatar/Pods/Alamofire/Source/Timeline.swift        | 136 ++++
+ Avatar/Pods/Alamofire/Source/Validation.swift      | 321 ++++++++
+ Avatar/Pods/Manifest.lock                          |  16 +
+ Avatar/Pods/Pods.xcodeproj/project.pbxproj         | 668 +++++++++++++++
+ .../Alamofire/Alamofire-Info.plist                 |  26 +
+ .../Alamofire/Alamofire-dummy.m                    |   5 +
+ .../Alamofire/Alamofire-prefix.pch                 |  12 +
+ .../Alamofire/Alamofire-umbrella.h                 |  16 +
+ .../Alamofire/Alamofire.modulemap                  |   6 +
+ .../Alamofire/Alamofire.xcconfig                   |  10 +
+ .../Pods-Avatar/Pods-Avatar-Info.plist             |  26 +
+ .../Pods-Avatar-acknowledgements.markdown          |  26 +
+ .../Pods-Avatar/Pods-Avatar-acknowledgements.plist |  58 ++
+ .../Pods-Avatar/Pods-Avatar-dummy.m                |   5 +
+ ...-Avatar-frameworks-Debug-input-files.xcfilelist |   2 +
+ ...Avatar-frameworks-Debug-output-files.xcfilelist |   1 +
+ ...vatar-frameworks-Release-input-files.xcfilelist |   2 +
+ ...atar-frameworks-Release-output-files.xcfilelist |   1 +
+ .../Pods-Avatar/Pods-Avatar-frameworks.sh          | 171 ++++
+ .../Pods-Avatar/Pods-Avatar-umbrella.h             |  16 +
+ .../Pods-Avatar/Pods-Avatar.debug.xcconfig         |  12 +
+ .../Pods-Avatar/Pods-Avatar.modulemap              |   6 +
+ .../Pods-Avatar/Pods-Avatar.release.xcconfig       |  12 +
+ 49 files changed, 9050 insertions(+), 38 deletions(-)
+
+commit b30cf853a022829f150083c1f3f6d632efcf74e8
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Sat Nov 2 23:38:17 2019 -0400
+
+    Installing dependencies
+
+ Avatar/.DS_Store                                   | Bin 0 -> 6148 bytes
+ .../Avatar.xcodeproj}/project.pbxproj              | 320 +++++++++++----------
+ .../project.xcworkspace/contents.xcworkspacedata   |   2 +-
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   0
+ Avatar/Avatar/.DS_Store                            | Bin 0 -> 6148 bytes
+ .../Avatar}/AppDelegate.swift                      |   2 +-
+ .../AppIcon.appiconset/Contents.json               |   0
+ .../Avatar}/Assets.xcassets/Contents.json          |   0
+ .../Avatar}/Base.lproj/LaunchScreen.storyboard     |   0
+ .../Avatar}/Base.lproj/Main.storyboard             |   0
+ .../Space Sphere App => Avatar/Avatar}/Info.plist  |   0
+ .../Avatar}/SceneDelegate.swift                    |   2 +-
+ .../Avatar}/ViewController.swift                   |   2 +-
+ .../AvatarTests/AvatarTests.swift                  |   8 +-
+ .../AvatarTests}/Info.plist                        |   0
+ .../AvatarUITests/AvatarUITests.swift              |   6 +-
+ .../AvatarUITests}/Info.plist                      |   0
+ Avatar/Podfile                                     |   7 +
+ README.md                                          |   4 +-
+ 19 files changed, 182 insertions(+), 171 deletions(-)
+
+commit fe5558e45d414fc50a8be2ab93f5beb6c59ac918
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MBP.lan1>
+Date:   Sat Nov 2 19:43:02 2019 -0400
+
+    Space Sphere app initialised
+
+ .DS_Store                                          | Bin 0 -> 6148 bytes
+ .../Space Sphere App.xcodeproj}/project.pbxproj    | 316 ++++++++++-----------
+ .../project.xcworkspace/contents.xcworkspacedata   |   2 +-
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   0
+ .../Space Sphere App}/AppDelegate.swift            |   4 +-
+ .../AppIcon.appiconset/Contents.json               |   0
+ .../Assets.xcassets/Contents.json                  |   0
+ .../Base.lproj/LaunchScreen.storyboard             |   0
+ .../Space Sphere App}/Base.lproj/Main.storyboard   |   0
+ .../Space Sphere App}/Info.plist                   |   0
+ .../Space Sphere App}/SceneDelegate.swift          |   4 +-
+ .../Space Sphere App}/ViewController.swift         |   4 +-
+ .../Space Sphere AppTests}/Info.plist              |   0
+ .../Space_Sphere_AppTests.swift                    |  10 +-
+ .../Space Sphere AppUITests}/Info.plist            |   0
+ .../Space_Sphere_AppUITests.swift                  |   8 +-
+ 16 files changed, 174 insertions(+), 174 deletions(-)
+
+commit 4f9588eca5386708c910daa2d6c7da4c77dd8cc1
+Author: Rosh Sugathan Thaivalappil <roshsugathanthaivalappil@Roshs-MacBook-Pro.local>
+Date:   Thu Oct 31 22:27:32 2019 -0400
+
+    Getting started
+
+ .../Bitcoin Price App.xcodeproj/project.pbxproj    | 595 +++++++++++++++++++++
+ .../project.xcworkspace/contents.xcworkspacedata   |   7 +
+ .../xcshareddata/IDEWorkspaceChecks.plist          |   8 +
+ .../Bitcoin Price App/AppDelegate.swift            |  37 ++
+ .../AppIcon.appiconset/Contents.json               |  98 ++++
+ .../Assets.xcassets/Contents.json                  |   6 +
+ .../Base.lproj/LaunchScreen.storyboard             |  25 +
+ .../Bitcoin Price App/Base.lproj/Main.storyboard   |  24 +
+ Bitcoin Price App/Bitcoin Price App/Info.plist     |  64 +++
+ .../Bitcoin Price App/SceneDelegate.swift          |  53 ++
+ .../Bitcoin Price App/ViewController.swift         |  20 +
+ .../Bitcoin_Price_AppTests.swift                   |  34 ++
+ .../Bitcoin Price AppTests/Info.plist              |  22 +
+ .../Bitcoin_Price_AppUITests.swift                 |  43 ++
+ .../Bitcoin Price AppUITests/Info.plist            |  22 +
+ 15 files changed, 1058 insertions(+)
+
+commit 47cd01a8ac4a7bfb4e9ff15d11e50393d8b2e4bd
+Author: Rosh Thaivalappil <42776910+rthaiva1@users.noreply.github.com>
+Date:   Wed Oct 30 19:41:20 2019 -0400
+
+    Initial commit
+
+ .gitignore | 68 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md  |  2 ++
+ 2 files changed, 70 insertions(+)
