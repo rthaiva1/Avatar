@@ -7,7 +7,9 @@
 //
 
 import UIKit
-
+protocol YourCellDelegate{
+    func didPressButton(Owner: String,Status: String,Price : Int,cell : TableViewCell)
+}
 class TableViewCell: UITableViewCell {
     @IBOutlet var avatarimage: UIImageView!
     @IBOutlet weak var salelabel: UILabel!
@@ -15,6 +17,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var avatarlevel: UILabel!
     @IBOutlet weak var ownertext: UITextField!
     @IBOutlet weak var pricelabel: UILabel!
+    var cellDelegate: YourCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -49,10 +52,6 @@ class TableViewCell: UITableViewCell {
     }
     @IBAction func newtransaction(_ sender: Any)
     {
-        add(owner: ownertext!.text! ,amount: Int(pricelabel!.text!)!)
-    }
-    
-    func add(owner: String, amount: Int) {
-
+        cellDelegate?.didPressButton(Owner: ownertext!.text!,Status: salelabel!.text!,Price : Int(pricelabel!.text!)!,cell : self)
     }
 }

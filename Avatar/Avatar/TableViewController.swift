@@ -28,12 +28,14 @@ class TableViewController: UITableViewController {
           ["Gurthalak, Voice of the Deeps",2,900000],
           ["Headmaster’s Charge",6,1800000]
     ]
-    
-    var game: [String: Int] = ["owner": 0]
-    
+    var game: [String: Int] = ["Player1": 900000,"Player2": 320000,"Player3": 93454003450,"Player4": 234420]
+    let chain = blockchain()
+    let alert1 = UIAlertController(title: "Insufficient Funds", message: "Please check your balance you have Insuffucient funds to buy this item", preferredStyle: .alert)
+    let alert2 = UIAlertController(title: "Invalid User", message: "You are not an authorized User.", preferredStyle: .alert)
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "avatarcell")
+        self.add(owner: "Player1",amount: 0,type: "genesis")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -60,11 +62,33 @@ class TableViewController: UITableViewController {
         let power   = avatars[indexPath.row][1] as! Int
         let coins   = avatars[indexPath.row][2] as! Int
         // Configure the cell...
+        cell.cellDelegate = self
         cell.set(name: avatar, level: power, price: coins)
         return cell
     }
     
-
+    func add(owner: String, amount: Int,type: String)
+       {
+        print(game[owner]!)
+        print(amount)
+           if game[owner] == nil {
+            print("alert2")
+               self.present(alert2, animated: true, completion: nil)
+               return
+           } else if game[owner]!-amount < 0 {
+            print("alert1")
+               game.updateValue(game[owner]!-amount, forKey: owner)
+               self.present(alert1, animated: true, completion: nil)
+               return
+           } else {
+               game.updateValue(game[owner]!-amount, forKey: owner)
+           }
+           if type == "genesis" {
+            chain.createGenesisBlock(data: [owner: amount])
+           } else if type == "normal" {
+               chain.createBlock(data: [owner: amount])
+           }
+       }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -110,4 +134,31 @@ class TableViewController: UITableViewController {
     }
     */
 
+}
+
+extension TableViewController: YourCellDelegate
+{
+    func didPressButton(Owner: String,Status: String,Price : Int, cell : TableViewCell)
+     {
+        if(Status != "Sold")
+        {
+        add(owner: Owner,amount: Price,type: "normal")
+        if (game[Owner] != nil)
+        {
+            if(game[Owner]! < 0)
+            {
+                game.updateValue(game[Owner]!+Price, forKey: Owner)
+            }
+            else
+            {
+            for visibleCell in tableView.visibleCells where visibleCell == cell {
+                if let currentCell = visibleCell as? TableViewCell
+                {
+                    currentCell.salelabel.text! = "Sold"
+                }
+            }
+            }
+        }
+        }
+    }
 }

@@ -20,6 +20,7 @@
 		14192F492373C37800D9A330 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14192F472373C37800D9A330 /* TableViewCell.xib */; };
 		143667652377908600D1E2B0 /* block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667642377908600D1E2B0 /* block.swift */; };
 		143667672377956A00D1E2B0 /* blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143667662377956A00D1E2B0 /* blockchain.swift */; };
+		1436676D2378181000D1E2B0 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1436676C2378181000D1E2B0 /* home.swift */; };
 		2EDD4A0E830D494DE652609F /* Pods_Avatar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665AB540AF13871A98B6F941 /* Pods_Avatar.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		14192F472373C37800D9A330 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		143667642377908600D1E2B0 /* block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = block.swift; sourceTree = "<group>"; };
 		143667662377956A00D1E2B0 /* blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blockchain.swift; sourceTree = "<group>"; };
+		1436676C2378181000D1E2B0 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		48022A8EE281D90D820155ED /* Pods-Avatar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.release.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.release.xcconfig"; sourceTree = "<group>"; };
 		50FCC9F783F69B576DA7FD6B /* Pods-Avatar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Avatar.debug.xcconfig"; path = "Target Support Files/Pods-Avatar/Pods-Avatar.debug.xcconfig"; sourceTree = "<group>"; };
 		665AB540AF13871A98B6F941 /* Pods_Avatar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Avatar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				14192F0B236E76C700D9A330 /* AppDelegate.swift */,
 				14192F0D236E76C700D9A330 /* SceneDelegate.swift */,
 				14192F11236E76C700D9A330 /* Main.storyboard */,
+				1436676C2378181000D1E2B0 /* home.swift */,
 				14192F3F2371328E00D9A330 /* TableViewController.swift */,
 				14192F14236E76C800D9A330 /* Assets.xcassets */,
 				14192F16236E76C800D9A330 /* LaunchScreen.storyboard */,
@@ -346,6 +349,7 @@
 			files = (
 				14192F0C236E76C700D9A330 /* AppDelegate.swift in Sources */,
 				143667652377908600D1E2B0 /* block.swift in Sources */,
+				1436676D2378181000D1E2B0 /* home.swift in Sources */,
 				14192F482373C37800D9A330 /* TableViewCell.swift in Sources */,
 				143667672377956A00D1E2B0 /* blockchain.swift in Sources */,
 				14192F402371328E00D9A330 /* TableViewController.swift in Sources */,
