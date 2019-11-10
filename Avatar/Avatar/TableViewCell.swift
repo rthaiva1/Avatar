@@ -9,13 +9,12 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
     @IBOutlet var avatarimage: UIImageView!
-    @IBOutlet weak var avatarLabel: UILabel!
-    @IBOutlet weak var ownerLabel: UILabel!
-    @IBOutlet weak var avatarLevel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    
+    @IBOutlet weak var salelabel: UILabel!
+    @IBOutlet weak var avatarlabel: UILabel!
+    @IBOutlet weak var avatarlevel: UILabel!
+    @IBOutlet weak var ownertext: UITextField!
+    @IBOutlet weak var pricelabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -35,24 +34,25 @@ class TableViewCell: UITableViewCell {
     
     func Init()
     {
-        avatarLabel!.text = ""
-        avatarLevel!.text = ""
-        ownerLabel!.text = ""
-        priceLabel!.text = ""
+        avatarlabel!.text = ""
+        avatarlevel!.text = ""
+        ownertext!.text = ""
+        pricelabel!.text = ""
     }
     
-    func set(name: String,level: Int,owner: String?, price: Int)
+    func set(name: String,level: Int, price: Int)
     {
-        avatarLabel!.text = name
-        avatarLevel!.text = String(level)
-        if(owner == nil)
-        {
-            ownerLabel!.text = "Buy Now"
-        }
-        else{
-            ownerLabel!.text = "Owner: " + owner!
-        }
+        avatarlabel!.text = name
+        avatarlevel!.text = "Level: " + String(level)
+        salelabel!.text = "Available for sale!!!"
+        pricelabel!.text = String(price)
+    }
+    @IBAction func newtransaction(_ sender: Any)
+    {
+        add(owner: ownertext!.text! ,amount: Int(pricelabel!.text!)!)
+    }
+    
+    func add(owner: String, amount: Int) {
 
-        priceLabel!.text = String(price)
     }
 }
