@@ -11,27 +11,29 @@ import UIKit
 class TableViewController: UITableViewController {
 
     let avatars =
-        [ ["Arcanite Reaper",2,100000],
-          ["Ashkandi",5,700000],
-          ["Atiesh",3,500000],
-          ["Benediction",2,600000],
-          ["Black Bow",2,800000],
-          ["Blackblade of Shahram",4,800000],
-          ["Corrupted Ashbringer",1,400000],
-          ["Dark Edge of Insanity",3,600000],
-          ["Dragon’s Call",3,700000],
-          ["Dragonwrath",5,1000000],
-          ["Fandral’s Flamescythe",2,50000],
-          ["Fangs of the Father",5,900000],
-          ["Flamewrath",3,500000],
-          ["Frostscythe of Lorde Ahune",1,100000],
-          ["Gurthalak, Voice of the Deeps",2,900000],
-          ["Headmaster’s Charge",6,1800000]
+        [
+          ["3","Atiesh",3,500000],
+          ["4","Benediction",2,600000],
+          ["7","Corrupted Ashbringer",1,400000],
+          ["8","Dark Edge of Insanity",3,600000],
+          ["10","Dragonwrath",5,1000000],
+          ["11","Fandral’s Flamescythe",2,50000],
+          ["12","Fangs of the Father",5,900000],
+          ["13","Flamewrath",3,500000],
+          ["14","Frostscythe of Lorde Ahune",1,100000],
+          ["15","Gurthalak, Voice of the Deeps",2,900000],
+          ["1","Arcanite Reaper",2,100000],
+          ["2","Ashkandi",5,700000],
+          ["5","Black Bow",2,800000],
+          ["9","Dragon’s Call",3,700000],
+          ["6","Blackblade of Shahram",4,800000],
+          ["16","Headmaster’s Charge",6,1800000]
     ]
-    var game: [String: Int] = ["Player1": 900000,"Player2": 320000,"Player3": 93454003450,"Player4": 234420]
+    var game: [String: Int] = ["Player1": 900000,"Player2": 320000,"Player3": 9345400,"Player4": 234420]
     let chain = blockchain()
     let alert1 = UIAlertController(title: "Insufficient Funds", message: "Please check your balance you have Insuffucient funds to buy this item", preferredStyle: .alert)
     let alert2 = UIAlertController(title: "Invalid User", message: "You are not an authorized User.", preferredStyle: .alert)
+    let alert3 = UIAlertController(title: "Blockchain Invalid", message: "Malicious Activity detetected the current Blockchain is compromised", preferredStyle: .alert)
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "avatarcell")
@@ -56,27 +58,33 @@ class TableViewController: UITableViewController {
     }
 
     
+    @IBAction func check(_ sender: Any)
+    {
+        for i in 1...chain.chain.count-1 {
+            if chain.chain[i].previousHash != chain.chain[i-1].hash {
+                self.present(alert3, animated: true, completion: nil)
+            }
+        }
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "avatarcell", for: indexPath) as! TableViewCell
-        let avatar = avatars[indexPath.row][0] as! String
-        let power   = avatars[indexPath.row][1] as! Int
-        let coins   = avatars[indexPath.row][2] as! Int
+        let image = avatars[indexPath.row][0] as! String
+        let avatar = avatars[indexPath.row][1] as! String
+        let power   = avatars[indexPath.row][2] as! Int
+        let coins   = avatars[indexPath.row][3] as! Int
         // Configure the cell...
         cell.cellDelegate = self
-        cell.set(name: avatar, level: power, price: coins)
+        cell.backgroundView = UIImageView.init(image: UIImage.init(named: "images"))
+        cell.set(imagename: image,name: avatar, level: power, price: coins)
         return cell
     }
     
     func add(owner: String, amount: Int,type: String)
        {
-        print(game[owner]!)
-        print(amount)
            if game[owner] == nil {
-            print("alert2")
                self.present(alert2, animated: true, completion: nil)
                return
            } else if game[owner]!-amount < 0 {
-            print("alert1")
                game.updateValue(game[owner]!-amount, forKey: owner)
                self.present(alert1, animated: true, completion: nil)
                return

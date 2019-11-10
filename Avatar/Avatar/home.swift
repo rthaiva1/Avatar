@@ -8,12 +8,15 @@
 
 import UIKit
 class ViewController: UIViewController {
-
-    @IBOutlet weak var text: UITextField!
-    
     @IBAction func asdas(_ sender: Any)
     {
                 performSegue(withIdentifier: "view", sender: self)
     }
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+    }
+ 
 }
 

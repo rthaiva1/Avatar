@@ -15,6 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t4b-Sk-op8">
+                            <rect key="frame" x="0.0" y="99.5" width="414" height="94"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <state key="normal" title=" Check Blockchain Validity" backgroundImage="images">
+                                <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </state>
+                            <connections>
+                                <action selector="check:" destination="P8n-Pq-vND" eventType="touchUpInside" id="zeU-dP-J4X"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uoO-c1-V8D">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -44,56 +55,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pga-pg-5SF">
-                                <rect key="frame" x="105" y="195" width="97" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-gD-Yk8">
-                                <rect key="frame" x="120" y="488" width="200" height="204"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <state key="normal" title="Go"/>
+                                <rect key="frame" x="0.0" y="695" width="414" height="201"/>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="58"/>
+                                <state key="normal" title="Buy Weapons">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="asdas:" destination="arm-6V-Nse" eventType="touchUpInside" id="Hnu-im-5dv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to enter the blockchain based weapon store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYz-Hd-yYg">
+                                <rect key="frame" x="-1" y="723.5" width="415" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pga-pg-5SF" firstAttribute="top" secondItem="72N-Tw-EKi" secondAttribute="top" constant="151" id="5D6-Xs-zt5"/>
-                            <constraint firstItem="72N-Tw-EKi" firstAttribute="bottom" secondItem="aF1-gD-Yk8" secondAttribute="bottom" constant="170" id="5p7-QP-koX"/>
-                            <constraint firstItem="72N-Tw-EKi" firstAttribute="trailing" secondItem="aF1-gD-Yk8" secondAttribute="trailing" constant="94" id="F8U-Ad-T24"/>
-                            <constraint firstItem="pga-pg-5SF" firstAttribute="leading" secondItem="72N-Tw-EKi" secondAttribute="leading" constant="105" id="YRg-LD-N6a"/>
-                            <constraint firstItem="aF1-gD-Yk8" firstAttribute="leading" secondItem="72N-Tw-EKi" secondAttribute="leading" constant="120" id="aA3-6v-UOP"/>
-                            <constraint firstItem="72N-Tw-EKi" firstAttribute="trailing" secondItem="pga-pg-5SF" secondAttribute="trailing" constant="212" id="siD-dK-V4k"/>
-                            <constraint firstItem="aF1-gD-Yk8" firstAttribute="top" secondItem="72N-Tw-EKi" secondAttribute="top" constant="444" id="szb-pz-P4m"/>
-                            <constraint firstItem="72N-Tw-EKi" firstAttribute="bottom" secondItem="pga-pg-5SF" secondAttribute="bottom" constant="633" id="unO-Xn-QVc"/>
+                            <constraint firstItem="FYz-Hd-yYg" firstAttribute="trailing" secondItem="72N-Tw-EKi" secondAttribute="trailing" id="2Xa-tO-DdA"/>
+                            <constraint firstItem="FYz-Hd-yYg" firstAttribute="leading" secondItem="JMH-5d-SxE" secondAttribute="leading" constant="-1" id="4GY-Ih-c6c"/>
+                            <constraint firstItem="FYz-Hd-yYg" firstAttribute="top" secondItem="72N-Tw-EKi" secondAttribute="top" constant="679.5" id="gbg-XA-AVN"/>
+                            <constraint firstAttribute="bottom" secondItem="aF1-gD-Yk8" secondAttribute="bottom" id="kUv-5P-cyJ"/>
+                            <constraint firstItem="72N-Tw-EKi" firstAttribute="bottom" secondItem="FYz-Hd-yYg" secondAttribute="bottom" constant="118" id="mtf-xJ-yKs"/>
+                            <constraint firstItem="aF1-gD-Yk8" firstAttribute="trailing" secondItem="72N-Tw-EKi" secondAttribute="trailing" id="rfq-aq-Bws"/>
+                            <constraint firstItem="aF1-gD-Yk8" firstAttribute="top" secondItem="72N-Tw-EKi" secondAttribute="top" constant="651" id="ulS-16-9qs"/>
+                            <constraint firstItem="aF1-gD-Yk8" firstAttribute="leading" secondItem="72N-Tw-EKi" secondAttribute="leading" id="x4m-cw-0EV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="72N-Tw-EKi"/>
                     </view>
                     <connections>
-                        <outlet property="text" destination="pga-pg-5SF" id="FHP-Ab-fuR"/>
                         <segue destination="P8n-Pq-vND" kind="show" identifier="view" id="ZMW-ib-GOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc3-DD-hvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="-829.01785714285711"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="D6d-4b-KVb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2bs-0M-GXS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z3Q-uk-80B">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9AO-6O-fJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-188" y="-129"/>
+            <point key="canvasLocation" x="-214.49275362318843" y="-174.10714285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images" width="1280" height="768"/>
+    </resources>
 </document>

@@ -43,8 +43,9 @@ class TableViewCell: UITableViewCell {
         pricelabel!.text = ""
     }
     
-    func set(name: String,level: Int, price: Int)
+    func set(imagename: String,name: String,level: Int, price: Int)
     {
+        avatarimage.image = UIImage(named: imagename)
         avatarlabel!.text = name
         avatarlevel!.text = "Level: " + String(level)
         salelabel!.text = "Available for sale!!!"
